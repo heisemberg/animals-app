@@ -15,7 +15,7 @@ public class Mascota : BaseEntity
     public string Especie { get; set; }
 
     [Required]
-    public string IdRaza { get; set; }
+    public int IdRaza { get; set; }
     public Raza Raza { get; set; }
 
     [Required]
