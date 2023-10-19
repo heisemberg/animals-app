@@ -18,7 +18,7 @@ builder.Services.ConfigureRatelimiting();
 
 builder.Services.AddAutoMapper(Assembly.GetEntryAssembly());
 builder.Services.ConfigureCors();
-// builder.Services.AddApplicationServices();
+builder.Services.AddApplicationServices();
 builder.Services.AddDbContext<AnimalsContext>(options =>{
     string connectionString = builder.Configuration.GetConnectionString("MySqlConex");
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));

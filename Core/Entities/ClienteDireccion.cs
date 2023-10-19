@@ -19,7 +19,7 @@ public class ClienteDireccion : BaseEntity
     public string Cardinal { get; set; }
     public int NumeroSec { get; set; }
     public string LetraTer { get; set; }
-    public string NumeroTer { get; set; }
+    public int NumeroTer { get; set; }
      public string CardinalSec { get; set; }
     public string Complemento { get; set; }
     public string CodigoPostal { get; set; }

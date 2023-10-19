@@ -2,11 +2,19 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Core.Entities;
+using Core.Interfaces;
+using Infrastructure.Data;
 
 namespace Infrastructure.Repositories
 {
-    public class DepartamentoRepository
+    public class DepartamentoRepository : GenericRepository<Departamento>, IDepartamentoRepository
     {
-        
+        private readonly AnimalsContext _context;
+
+        public DepartamentoRepository(AnimalsContext context) : base(context)
+        {
+            _context = context;
+        }
     }
 }
